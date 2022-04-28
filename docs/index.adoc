@@ -1,0 +1,21 @@
+= Getting Started with Java: The JBang Way
+:author: Max Rydahl Andersen <manderse@redhat.com>
+:date: 2022-04-28
+:revealjs_theme: sky
+// better livereload
+:revealjs_fragmentInURL: true
+:revealjs_controls: true
+:revealjs_controlsLayout: edges
+:revealjs_controlsTutorial: true
+:revealjs_slideNumber: c/t
+:revealjs_showSlideNumber: speaker
+:revealjs_autoPlayMedia: true
+:revealjs_parallaxBackgroundImage: images/mntbackground.jpg
+:revealjs_parallaxBackgroundSize: 4936px 2092px
+
+:source-highlighter: highlightjs
+:highlightjs-languages: yaml
+
+include::examples.adoc[]
+
+include::outlook.adoc[]
