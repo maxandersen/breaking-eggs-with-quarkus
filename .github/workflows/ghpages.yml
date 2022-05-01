@@ -25,6 +25,11 @@ jobs:
           cd docs
           ~/.jbang/bin/jbang adoc2reveal.java
 
+## https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-first-deployment-with-github_token
+## git checkout --orphan gh-pages
+##  git reset --hard
+## git  commit --allow-empty -m "Initializing gh-pages branch"
+## git push origin gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
