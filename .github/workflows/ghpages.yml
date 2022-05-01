@@ -16,7 +16,7 @@ jobs:
           curl -Ls https://sh.jbang.dev | bash -s - app setup
           source ~/.bashrc
           cd docs
-          jbang adoc2reveal.java
+          ~/.jbang/bin/jbang adoc2reveal.java
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3

@@ -1,6 +1,5 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
-/* can run faster this way - but not a requirement */
-//JAVA 17+
+//JAVA 11+
 //JAVA_OPTIONS --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED
 //DEPS org.asciidoctor:asciidoctorj:2.5.3
 //DEPS org.asciidoctor:asciidoctorj-diagram:2.2.1
