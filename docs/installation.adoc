@@ -1,0 +1,22 @@
+== Installation
+
+[background-iframe="https://www.jbang.dev/download/"]
+=== Many Ways
+
+=== The Simplest Way
+
+[source,bash]
+curl -Ls https://sh.jbang.dev | bash -s - app setup
+
+[%step]
+* Downloads and configure JBang
+* If no Java found, downloads Java 11
+
+[.notes]
+--
+No Java, No IDE, No setup upfront.
+All there is to it.
+--
+
+
+

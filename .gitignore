@@ -1,0 +1,7 @@
+index.html
+*.html
+*.iml
+.idea
+.vscode
+.asciidoctor
+diag-*.png

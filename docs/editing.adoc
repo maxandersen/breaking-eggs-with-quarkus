@@ -1,0 +1,37 @@
+== Editing
+
+=== The Simplest Way
+
+[source,bash,highlight="1|10..14"]
+----
+jbang edit app.java
+[jbang] You requested to open default editor but no default 
+editor configured.
+
+jbang can download and configure a visual studio code (VSCodium) 
+with Java support to use
+
+Do you want to
+
+(1) Download and run VSCodium
+(2) Use 'code'
+(3) Use 'eclipse'
+(4) Use 'idea'
+(0) Cancel
+----
+
+=== ...
+
+image::images/vscodium.png[background, size=cover]
+
+=== ...
+
+- No Java Install
+- No Maven or Gradle Install
+- No IDE Install
+- Just JBang
+
+
+
+
+

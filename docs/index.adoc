@@ -1,21 +1,29 @@
-= Getting Started with Java: The JBang Way
-:author: Max Rydahl Andersen <manderse@redhat.com>
+= Getting Started with Java
+:author: Max Rydahl Andersen @maxandersen 
 :date: 2022-04-28
-:revealjs_theme: sky
+:revealjs_theme: night
+:customcss: css/custom.css
 // better livereload
 :revealjs_fragmentInURL: true
+:revealjs_hash: true
 :revealjs_controls: true
 :revealjs_controlsLayout: edges
 :revealjs_controlsTutorial: true
 :revealjs_slideNumber: c/t
 :revealjs_showSlideNumber: speaker
 :revealjs_autoPlayMedia: true
-:revealjs_parallaxBackgroundImage: images/mntbackground.jpg
-:revealjs_parallaxBackgroundSize: 4936px 2092px
+//:revealjs_parallaxBackgroundImage: images/mntbackground.jpg
+//:revealjs_parallaxBackgroundSize: 4936px 2092px
+:source-highlighter: highlight.js
+:revealjs_preloadIframes: true
+:icons: font
 
-:source-highlighter: highlightjs
-:highlightjs-languages: yaml
+include::gettingstarted.adoc[]
 
-include::examples.adoc[]
+include::installation.adoc[]
+
+include::helloworld.adoc[]
+
+include::editing.adoc[]
 
 include::outlook.adoc[]

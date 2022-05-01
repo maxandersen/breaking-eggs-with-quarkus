@@ -4,7 +4,9 @@
 #    https://asciidoctor.org/docs/asciidoctor-revealjs/
 
 SRCFILE=index.adoc
-CMD="asciidoctor-revealjs -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js@4.3.1 $SRCFILE"
+##CMD="asciidoctor-revealjs -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js@4.3.1 $SRCFILE"
+## using .jar on classpath until https://github.com/asciidoctor/asciidoctorj-reveal.js/pull/4 is released
+CMD="jbang adoc2reveal.java"
 
 echo "Rendering $SRCFILE with $CMD"
 $CMD

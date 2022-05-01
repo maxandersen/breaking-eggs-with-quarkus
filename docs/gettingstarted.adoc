@@ -1,0 +1,15 @@
+== reddit/learnjava
+
+image::images/reddit-comparehelloworldpython.png[width=200%]
+
+=== reddit/learnjava
+
+image::images/reddit-installingjava.png[width=200%]
+
+=== reddit/learnjava
+
+image::images/reddit-runningthedamnthing.png[width=200%]
+
+== The JBang Way
+
+image::images/thisistheway.jpg[background, size=cover]
