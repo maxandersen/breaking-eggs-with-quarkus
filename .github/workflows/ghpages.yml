@@ -30,6 +30,12 @@ jobs:
 ##  git reset --hard
 ## git  commit --allow-empty -m "Initializing gh-pages branch"
 ## git push origin gh-pages
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: docs # The folder the action should deploy.
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
