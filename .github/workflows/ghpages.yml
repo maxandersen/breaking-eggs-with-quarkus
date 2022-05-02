@@ -23,7 +23,6 @@ jobs:
         run: |
           curl -Ls https://sh.jbang.dev | bash -s - app setup
           source ~/.bashrc
-          cd docs
           ~/.jbang/bin/jbang adoc2reveal.java
 
 ## https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-first-deployment-with-github_token
@@ -37,7 +36,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: docs
+          FOLDER: .
           GIT_CONFIG_NAME: GitHub Actions
           GIT_CONFIG_EMAIL: action@github.com
           COMMIT_MESSAGE: Auto deploy
