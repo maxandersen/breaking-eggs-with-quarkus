@@ -1,0 +1,33 @@
+= Getting Started with Java
+:date: 2022-04-28
+:revealjs_theme: night
+:customcss: css/custom.css
+// better livereload
+:revealjs_fragmentInURL: true
+:revealjs_hash: true
+:revealjs_controls: true
+:revealjs_controlsLayout: edges
+:revealjs_controlsTutorial: true
+:revealjs_slideNumber: c/t
+:revealjs_showSlideNumber: speaker
+:revealjs_autoPlayMedia: true
+:revealjs_totalTime: 1500
+//:revealjs_parallaxBackgroundImage:  images/mntbackground.jpg
+//:revealjs_parallaxBackgroundSize: 4936px 2092px
+:source-highlighter: highlight.js
+:revealjs_preloadIframes: true
+:icons: font
+
+Max Rydahl Andersen +
+@maxandersen +
+image:images/icons/redhat.png[role=icon]
+
+include::docs/gettingstarted.adoc[]
+
+include::docs/installation.adoc[]
+
+include::docs/helloworld.adoc[]
+
+include::docs/editing.adoc[]
+
+include::docs/outlook.adoc[]

@@ -1,7 +1,7 @@
+[%notitle]
 == Installation
 
-[background-iframe="https://www.jbang.dev/download/"]
-=== Many Ways
+video::videos/cleansetup.mp4[options=autoplay,loop,nocontrols]
 
 === The Simplest Way
 
@@ -11,6 +11,9 @@ curl -Ls https://sh.jbang.dev | bash -s - app setup
 [%step]
 * Downloads and configure JBang
 * If no Java found, downloads Java 11
+
+[background-iframe="https://www.jbang.dev/download/"]
+=== Many Ways
 
 [.notes]
 --
