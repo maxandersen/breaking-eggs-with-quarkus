@@ -17,8 +17,8 @@ jobs:
         uses: actions/cache@v3
         with:
           path: |
-            "~/.jbang"
-            "~/.m2"
+            ~/.jbang
+            ~/.m2
           key: ${{ runner.os }}
       
       - name: Build Presentation 🔧 # build presentation using jbang
