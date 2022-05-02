@@ -10,7 +10,6 @@ You can run `./render` and it will setup jbang and run the script or if you alre
 
 [source,bash]
 ----
-cd docs
 jbang adoc2reveal.java --watch
 ----
 
