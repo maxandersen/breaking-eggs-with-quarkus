@@ -66,9 +66,8 @@ is your editor or IDE, e.g. 'eclipse'
 
 [source,java,highlight="1|2|15..16"]
 ----
-///usr/bin/env jbang "$0" "$@" ; exit $?
-//DEPS info.picocli:picocli:4.5.0
-
+ ///usr/bin/env jbang "$0" "$@" ; exit $?
+ //DEPS info.picocli:picocli:4.5.0
 
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
@@ -100,7 +99,7 @@ class app implements Callable<Integer> {
 
 [source,bash,highlight="1|2..5|6|7..10"]
 ----
-$ ./app.java --help
+$ ./app.java
 [jbang] Resolving dependencies...
 [jbang] info.picocli:picocli:jar:4.5.0
 Done

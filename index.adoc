@@ -2,6 +2,7 @@
 :date: 2022-04-28
 :revealjs_theme: night
 :customcss: css/custom.css
+:favicon: ./images/favicon.ico
 // better livereload
 :revealjs_fragmentInURL: true
 :revealjs_hash: true
@@ -15,6 +16,8 @@
 //:revealjs_parallaxBackgroundImage:  images/mntbackground.jpg
 //:revealjs_parallaxBackgroundSize: 4936px 2092px
 :source-highlighter: highlight.js
+// leave empty or pick style from gallery at https://highlightjs.org/static/demo/ and find url at https://cdnjs.com/libraries/highlight.js
+:highlightjs-theme: https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/solarized-dark.min.css
 :revealjs_preloadIframes: true
 :icons: font
 
@@ -30,4 +33,9 @@ include::docs/helloworld.adoc[]
 
 include::docs/editing.adoc[]
 
-include::docs/outlook.adoc[]
+include::docs/debugging.adoc[]
+
+include::docs/summary.adoc[]
+
+include::docs/exploring.adoc[]
+

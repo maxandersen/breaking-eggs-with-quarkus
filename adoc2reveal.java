@@ -81,6 +81,7 @@ public class adoc2reveal implements Callable<Integer> {
     
     @Override
     public Integer call() throws Exception {
+        System.out.println("Boting up Asciidoctor...");
         asciidoctor = Asciidoctor.Factory.create();
 
         asciidoctor.registerLogHandler(new LogHandler() {

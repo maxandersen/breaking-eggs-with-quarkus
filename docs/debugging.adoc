@@ -1,0 +1,16 @@
+== Debugging
+
+== The JBang Way
+
+image::images/mandaloriandebug.jpg[background, size=cover]
+
+[%notitle]
+=== Simple Debugging
+
+[source,bash,highlight="1|2"]
+----
+$ jbang --debug app.java
+Listening for transport dt_socket at address: 4004
+----
+
+

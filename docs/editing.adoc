@@ -1,5 +1,9 @@
 == Editing
 
+== The JBang Way
+
+image::images/mandaloriandessert.jpg[background, size=cover]
+
 === The Simplest Way
 
 [source,bash,highlight="1|10..14"]
@@ -20,17 +24,23 @@ Do you want to
 (0) Cancel
 ----
 
+[%notitle]
 === ...
 
 image::images/vscodium.png[background, size=cover]
 
-=== ...
+[background-iframe="https://www.jbang.dev/documentation/guide/latest/editing.html#ide-and-editor-support"]
+=== Anywhere
 
-- No Java Install
-- No Maven or Gradle Install
-- No IDE Install
-- Just JBang
+[.columns]
+=== Direct IDE Support
 
+[.column.is-two-thirds]
+IntelliJ
+image:images/intellij.png[width="150%"]
+
+[.column]
+Eclipse and Visual Studio Code In progress
 
 
 

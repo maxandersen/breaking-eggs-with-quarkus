@@ -1,0 +1,17 @@
+== Getting Started with Java
+
+== The JBang Way
+
+image::images/thisistheway.jpg[background, size=cover]
+
+=== In 5 min or less...
+
+We started [.step.highlight-red]#creating#, [.step.highlight-red]#editing#, [.step.highlight-red]#running# and [.step.highlight-red]#debugging# Java
+
+[%step]
+--
+- Without `java` or `javac`
+- Witout `mvn` or `gradle`
+- No `vscode`, `eclipse`, `intellij` Install
+- *Just* `jbang`
+--

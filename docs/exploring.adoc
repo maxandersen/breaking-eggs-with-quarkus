@@ -1,0 +1,32 @@
+== After 5 minutes...
+
+=== Go Explore
+
+=== Run All The Things
+
+[source,bash]
+----
+$ cat 5letterwords.txt | jbang -c \
+  'lines().filter(s->s.contains("dog")).forEach(p->println(p))'
+$ jbang demo.jsh
+$ jbang app.jar
+$ jbang org.jreleaser:jreleaser:1.0.0
+$ jbang jbang.dev
+----
+
+=== Catalogs
+
+- `jbang-catalog` repository or `jbang-catalog.json`
+- Run aliases: `jbang env@jbangdev`
+- Init templates: `jbang init -t githubapp@quarkusio myapp.java`
+
+=== Catalog examples
+
+[source,bash] 
+----
+$ jbang quarkusio@jbangdev
+$ jbang -s faker@jbangdev -c \
+  'Stream.generate(faker.name()::fullName).filter(s->s.contains("Angie")).forEach(s -> println("Awesome " + s))'
+----
+[background-iframe="https://www.jbang.dev/usage/"]
+=== Adoption

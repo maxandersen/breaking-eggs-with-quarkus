@@ -1,6 +1,7 @@
 [%notitle]
 == Installation
 
+[.stretch]
 video::videos/cleansetup.mp4[options=autoplay,loop,nocontrols]
 
 === The Simplest Way
