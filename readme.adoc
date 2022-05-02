@@ -1,0 +1,17 @@
+# Getting Started with Java: The JBang Way
+
+A (work-in-progress) presentation made for https://docs.microsoft.com/en-us/events/learntv/jdconf-2022/[JDConf 2022].
+
+The presentation is done using asciidoctor + reveal.js and the whole thing is wired up with a link:src/docs/adoc2reveal.java[JBang script] uses Github Actions to publish to 
+
+The advantage is that you need zero installation and setup for this. No Java, Maven, Ruby, Gems etc. setup. All done and in isolated and in a reproducible manner.
+
+You can run `./render` and it will setup jbang and run the script or if you already have https://jbang.dev/download[jbang installed] you can do:
+
+[source,bash]
+----
+cd docs
+jbang adoc2reveal.java --watch
+----
+
+
