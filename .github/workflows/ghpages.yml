@@ -16,9 +16,9 @@ jobs:
       - name: Cache multiple paths # To avoid installing and downloading jbang/java on each build
         uses: actions/cache@v3
         with:
-          path: 
-            - "~/.jbang"
-            - "~/.m2"
+          path: |
+            "~/.jbang"
+            "~/.m2"
           key: ${{ runner.os }}
       
       - name: Build Presentation 🔧 # build presentation using jbang
