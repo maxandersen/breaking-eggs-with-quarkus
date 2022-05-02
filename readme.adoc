@@ -13,4 +13,10 @@ You can run `./render` and it will setup jbang and run the script or if you alre
 jbang adoc2reveal.java --watch
 ----
 
+This will get you a `index.html` generated anytime a `.adoc` file changes. 
 
+You can open it directly from the filesystem, but works best when served from a server.
+
+You can run `jbang httpd@jbangdev` to serve the `index.html` file,
+or use something like vscode live reload plugin to open the index.html 
+and get live-reload when it re-renders.
