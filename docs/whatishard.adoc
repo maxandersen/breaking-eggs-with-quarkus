@@ -1,0 +1,15 @@
+== What is hard about getting started with Java ?
+
+=== reddit/learnjava
+
+image::images/reddit-comparehelloworldpython.png[width=200%, link="https://www.reddit.com/r/learnjava/comments/u71uxj/what_is_the_thing_that_makes_java_hard_to_get/i5c726b"]
+
+=== reddit/learnjava
+
+image::images/reddit-installingjava.png[width=200%, link="https://www.reddit.com/r/learnjava/comments/u71uxj/comment/i5d97nx"]
+
+=== reddit/learnjava
+
+image::images/reddit-runningthedamnthing.png[width=200%, link="https://www.reddit.com/r/learnjava/comments/u71uxj/comment/i5gfjqy"]
+
+

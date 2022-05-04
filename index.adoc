@@ -25,11 +25,9 @@ Max Rydahl Andersen +
 @maxandersen +
 image:images/icons/redhat.png[role=icon]
 
+include::docs/whatishard.adoc[]
+
 include::docs/gettingstarted.adoc[]
-
-include::docs/installation.adoc[]
-
-include::docs/helloworld.adoc[]
 
 include::docs/editing.adoc[]
 
@@ -37,5 +35,5 @@ include::docs/debugging.adoc[]
 
 include::docs/summary.adoc[]
 
-include::docs/exploring.adoc[]
+include::docs/beyondgettingstarted.adoc[]
 

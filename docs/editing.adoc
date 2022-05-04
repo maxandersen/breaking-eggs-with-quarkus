@@ -1,6 +1,6 @@
 == Editing
 
-== The JBang Way
+=== The JBang Way
 
 image::images/mandaloriandessert.jpg[background, size=cover]
 

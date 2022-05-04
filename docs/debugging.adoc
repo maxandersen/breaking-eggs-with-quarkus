@@ -1,6 +1,6 @@
 == Debugging
 
-== The JBang Way
+=== The JBang Way
 
 image::images/mandaloriandebug.jpg[background, size=cover]
 

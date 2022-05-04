@@ -1,12 +1,13 @@
-== Getting Started with Java
+== What just happened?
 
-== The JBang Way
+=== The JBang Way
 
 image::images/thisistheway.jpg[background, size=cover]
 
 === In 5 min or less...
 
-We started [.step.highlight-red]#creating#, [.step.highlight-red]#editing#, [.step.highlight-red]#running# and [.step.highlight-red]#debugging# Java
+[%step]
+We started [.step.highlight-red]#creating#, [.step.highlight-red]#editing#, [.step.highlight-red]#running# and [.step.highlight-red]#debugged# Java
 
 [%step]
 --
