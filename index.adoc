@@ -37,3 +37,4 @@ include::docs/summary.adoc[]
 
 include::docs/beyondgettingstarted.adoc[]
 
+include::docs/theend.adoc[]

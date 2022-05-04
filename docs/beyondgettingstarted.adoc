@@ -48,6 +48,8 @@ __  ____  __  _____   ___  __ ____  ______
 //DEPS io.quarkus:quarkus-bom:${quarkus.version:1.11.0.Final}@pom
 //DEPS io.quarkus:quarkus-resteasy
 //JAVAC_OPTIONS -parameters
+//FILES resources/index.html=index.html
+//SOURCES **.java
 
 import io.quarkus.runtime.Quarkus;
 import javax.enterprise.context.ApplicationScoped;
@@ -82,14 +84,26 @@ $ jbang jbang.dev
 
 [%step]
 - `jbang-catalog` repository or `jbang-catalog.json`
-- Run aliases: `jbang env@jbangdev`
+- Run aliases: `jbang env@jbangdev`, `jbang minecraft-server@microsoft`
 - Init templates: `jbang init -t githubapp@quarkusio myapp.java`
+- Browse on https://jbang.dev/appstore[jbang.dev/appstore]
 
-=== Catalog examples
+[background-iframe="https://www.jbang.dev/appstore/"]
+=== JBang AppStore
 
-[source,bash,highlight="1|2..3"]] 
+=== faker.jsh Example
+
+[source,java]
 ----
-$ jbang quarkusio@jbangdev
+//DEPS com.github.javafaker:javafaker:1.0.2
+
+import com.github.javafaker.Faker;
+
+Faker faker = new Faker();
+----
+
+[source,bash,highlight="1|2..3"] 
+----
 $ jbang -s faker@jbangdev -c \
   'Stream.generate(faker.name()::fullName).filter(s->s.contains("Angie")).forEach(s -> println("Awesome " + s))'
 ----
@@ -118,7 +132,3 @@ If you have questions, check https://github.com/quarkusio/quarkus/discussions
 Usage: quarkus [-ehv] [--verbose] [-D=<String=String>]... [COMMAND]
 Options:
 ----
-
-
-[background-iframe="https://www.jbang.dev/usage/"]
-=== Adoption

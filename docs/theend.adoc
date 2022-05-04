@@ -1,0 +1,21 @@
+== Conclusion
+
+[%step]
+- JBang is the best way to Get started with Java
+- JBang let you write anything; from one-liners...
+- ...to full-fledged Java microservices
+- JBang lets you run and install Java apps
+- JBang has an appstore
+
+[.columns]
+=== The End
+
+[.column]
+https://jbang.dev[jbang.dev]
+https://jbang.dev/appstore[jbang.dev/appstore]
+...works with Java, Kotlin and Groovy too!
+
+[.column]
+Slides: https://github.com/maxandersen/getting-started-with-java-the-jbang-way[GitHub] +
+Built with JBang, AsciiDoctor and reveal.js +
+Images are various Mandalorian fan-art.
