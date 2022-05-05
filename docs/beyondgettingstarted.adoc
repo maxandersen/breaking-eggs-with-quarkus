@@ -76,7 +76,7 @@ $ jbang demo.jsh
 $ jbang app.jar
 $ jbang org.jreleaser:jreleaser:1.0.0
 $ jbang https://github.com/jbangdev/jbang/../examples/inetTest.java
-$ jbang jbang.dev
+$ jbang https://jbang.dev
 ----
 
 === Sharing is Caring
