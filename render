@@ -4,7 +4,6 @@ if ! command -v jbang &> /dev/null
 then
     echo "jbang could not be found - installing"
     curl -Ls https://sh.jbang.dev | bash -s - app setup
-    exit
 fi
 
 jbang adoc2reveal.java --watch
