@@ -1,0 +1,262 @@
+[%notitle]
+== Nice Cake
+
+image::images/nice-cake.avif[background, size=cover]
+
+
+[.notes]
+--
+To make a cake
+--
+
+[%notitle]
+== Broken egg
+
+image::images/broken-egg.avif[background, size=cover]
+
+[%notitle]
+== Quarkus?
+:classic: The classic way
+
+image::images/quarkusspace.png[background, size=cover]
+
+
+[.notes]
+--
+...
+--
+
+[%notitle]
+== Supersonic
+
+image::images/supersonic.png[background, size=cover]
+
+[%notitle]
+== Subatomic
+
+image::images/subatomic.png[background, size=cover]
+
+[%notitle]
+== Hot Java 
+
+image::images/hotjava.png[background, size=cover]
+
+[%notitle]
+== Nice Cake!
+
+image::images/nice-cake-strawberry.avif[background, size=cover]
+
+[.notes]
+--
+That is a proper cake!
+
+Excellent performance,
+Ability to have super density
+- all somethig that make your devops team
+happy and especially the financial department
+and even better yet - your users can wait less if done right!
+
+And then the toppings are the awesome developer experience.
+--
+
+[transition=fade]
+== {classic}
+image::images/buildruntime-1.png[]
+
+[transition=none]
+== {classic}
+
+image::images/buildruntime-2.png[]
+
+[transition=none]
+== {classic}
+
+image::images/buildruntime-3.png[]
+
+[transition=none]
+== {classic}
+
+image::images/buildruntime-4.png[]
+
+[transition=none]
+== {classic}
+
+image::images/buildruntime-5.png[]
+
+[transition=none]
+== The Quarkus Way
+
+image::images/buildruntime-6.png[]
+
+[%notitle]
+== Start Breaking Eggs
+
+image::images/kid-breaking-egg.avif[background, size=cover]
+
+== icon:egg[set=fas] Configuration can be changed at/after startup
+
+[%step]
+image::images/brokenegg.png[]
+
+=== Build and Runtime config
+
+[%step]
+* icon:heart[] Reduce classes needed to load
+* Use Build time info to discard runtime need
+* Example: Only load Hibernate Dialects as needed, Don't load configuration at runtime, ...
+
+[%notitle,background-iframe="https://quarkus.io/guides/all-config"]
+=== All Configuration
+
+== icon:egg[set=fas] All Beans are available to lookup
+
+[%step]
+image::images/brokenegg.png[]
+
+== Removal of Unused Beans
+
+* 1 bean = 3 generated classes
+* Big app with some unused beans = waste of time and memory
+
+https://quarkus.io/blog/unused-beans/
+
+=== What are removed ?
+
+Everything, except beans that...:
+
+* ...are `@Named`
+
+* ...have an observer method (`@Observes`)
+
+* ...are annotated with `@Unremovable`
+
+* ...are excluded via `quarkus.arc.unremovble-types` config 
+
+* ...are identified by Quarkus Extensions
+
+=== Bean removal
+
+* icon:heart[] Less classes loaded, faster startup, less memory used
+* Lookup using `CDI.current()` not detectable.
+* Solution:
+** Use `@Unremovable` or `unremovable-types` config 
+** Turn removal off with: `quarkus.arc.remove-unused-beans=false`
+
+== icon:egg[set=fas] static blocks run at startup
+
+[%step]
+image::images/brokenegg.png[]
+
+== Static initi at build time
+
+* icon:heart[set=fas] Quarkus initializes all classes at build time = faster startup
+* You or some "bad" library might have static init
+
+[source,java]
+----
+class MyClass {
+    static Random random = new Random();
+    ...
+}
+----
+
+=== Static initialization solutions
+
+[%step]
+** Don't do static init!
+*** `@Observes StartupEvent` and `@Startup` bean
+*** Lazy initialization
+** Write Quarkus Extension to handle it
+
+== Why inflict "pain" on users?
+
+[%notitle]
+== Why:
+
+[quote, Luis from Cap Gemini Spain]
+We went from 50(!) seconds startup with our previous used framework. 
+To just 2-3 seconds with Quarkus in JVM mode and 15ms in native mode with GraalVM.
+
+=== Get Used to it
+
+[%step]
+* Today it is hard as libraries assume runtime init of all statics
+* Quarkus give glimpse of future using GraalVM substitutions (raw speed!)
+* Expect Project Leyden or similar to introduce true static init in Java
+
+== Breaking Development Experience Eggs!
+
+
+== icon:egg[set=fas] You have to restart your app to see changes
+
+[%step]
+image::images/brokenegg.png[]
+
+== `quarkus dev`
+
+[%steps]
+* A Special run mode 
+* icon:heart[] Can use full power and memory as dev need
+* Hot-reload on incoming requests
+* icon:heart[] Change method, classes, packages, dependencies, ...
+* icon:heart[] Restart in less time than you will notice
+
+== icon:egg[set=fas] I have to setup my own testing infrastructure
+
+[%step]
+image::images/brokenegg.png[]
+
+== Quarkus Dev Services
+
+[%step]
+* With `quarkus dev` services based on your classpath/extension list
+* But only IFF they are not configured
+* Evergrowing list of supported services
+
+[%notitle,background-iframe="https://quarkus.io/guides/dev-services"]
+=== Quarkus Dev Services2
+
+== icon:egg[set=fas] I have to write tests first
+
+[%step]
+image::images/brokenegg.png[]
+
+== Continous Testing
+
+[%step]
+* Press 'r' in `quarkus dev`
+* or Run standalone
+* Smart continuous test execution
+* While you write code
+
+== Why `quarkus dev` ?
+
+[%step]
+- Developers actually get to use it!
+
+[%notitle]
+== Everybody gets Cake
+
+image::images/quarkuscake.png[background, size=cover]
+
+== Cracked eggs
+
+[%step]
+- icon:egg[set=fas] Configuration can be changed at/after startup
+- icon:egg[set=fas] All Beans are available to lookup
+- icon:egg[set=fas] static blocks run at startup
+- icon:egg[set=fas] I have to restart my app to see changes
+- icon:egg[set=fas] I have to setup my own testing infrastructure
+- icon:egg[set=fas] I have to write tests first
+
+== Conclusion
+
+[%step]
+* Quarkus is supersonic and subatomic Java
+** Developers get to have joy
+** Operations gets resources
+** Customers get what they need faster
+* Because we broke some eggs!
+
+Try https://quarkus.io[quarkus.io]
+

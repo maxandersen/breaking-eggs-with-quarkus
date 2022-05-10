@@ -4,6 +4,7 @@
 //DEPS org.asciidoctor:asciidoctorj:2.5.3
 //DEPS org.asciidoctor:asciidoctorj-diagram:2.2.1
 //DEPS org.asciidoctor:asciidoctorj-revealjs:5.0.0.rc1
+//DEPS org.asciidoctor:asciidoctorj-chart:1.0.0.alpha.1
 //DEPS info.picocli:picocli:4.6.3
 
 import org.asciidoctor.Asciidoctor;
@@ -81,7 +82,7 @@ public class adoc2reveal implements Callable<Integer> {
     
     @Override
     public Integer call() throws Exception {
-        System.out.println("Boting up Asciidoctor...");
+        System.out.println("Booting up Asciidoctor...");
         asciidoctor = Asciidoctor.Factory.create();
 
         asciidoctor.registerLogHandler(new LogHandler() {
@@ -92,6 +93,7 @@ public class adoc2reveal implements Callable<Integer> {
         });
         asciidoctor.requireLibrary("asciidoctor-revealjs");
         asciidoctor.requireLibrary("asciidoctor-diagram");
+        asciidoctor.requireLibrary("asciidoctor-chart");
 
         render();
 
@@ -124,7 +126,7 @@ public class adoc2reveal implements Callable<Integer> {
     }
 
     private void render() {
-        System.out.printf("Render %s\n",file);
+        System.out.printf("Start Rendering %s\n",file);
 
         asciidoctor.convertFile(file,
                 Options.builder()
@@ -136,5 +138,6 @@ public class adoc2reveal implements Callable<Integer> {
                                         .build()
                         ).build()
         );
+        System.out.printf("Done Rendering %s\n",file);
     }
 }

@@ -1,9 +1,11 @@
-= Getting Started with Java
-:date: 2022-04-28
-:revealjs_theme: night
+= To make a cake you need to break some eggs
+:date: 2022-05-10
+:revealjs_theme: white
 :customcss: css/custom.css
 :favicon: ./images/favicon.ico
-// better livereload
+// better 
+:title-slide-background-image: images/slide-white.png
+:slide-background-image: images/slide2-white.png
 :revealjs_fragmentInURL: true
 :revealjs_hash: true
 :revealjs_controls: true
@@ -12,7 +14,7 @@
 :revealjs_slideNumber: c/t
 :revealjs_showSlideNumber: speaker
 :revealjs_autoPlayMedia: true
-:revealjs_totalTime: 1500
+:revealjs_totalTime: 2700
 //:revealjs_parallaxBackgroundImage:  images/mntbackground.jpg
 //:revealjs_parallaxBackgroundSize: 4936px 2092px
 :source-highlighter: highlight.js
@@ -21,20 +23,9 @@
 :revealjs_preloadIframes: true
 :icons: font
 
+
 Max Rydahl Andersen +
 @maxandersen +
 image:images/icons/redhat.png[role=icon]
 
-include::docs/whatishard.adoc[]
-
-include::docs/gettingstarted.adoc[]
-
-include::docs/editing.adoc[]
-
-include::docs/debugging.adoc[]
-
-include::docs/summary.adoc[]
-
-include::docs/beyondgettingstarted.adoc[]
-
-include::docs/theend.adoc[]
+include::docs/content.adoc[]

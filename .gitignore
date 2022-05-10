@@ -5,3 +5,4 @@ index.html
 .vscode
 .asciidoctor
 diag-*.png
+docs/breaking-eggs-with-quarkus.code-workspace
