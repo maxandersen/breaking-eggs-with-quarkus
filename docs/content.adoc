@@ -249,6 +249,11 @@ image::images/quarkuscake.png[background, size=cover]
 - icon:egg[set=fas] I have to setup my own testing infrastructure
 - icon:egg[set=fas] I have to write tests first
 
+[%notitle]
+== Quarkus All The Things
+
+image::images/quarkusallthethings.png[background, size=cover]
+
 == Conclusion
 
 [%step]

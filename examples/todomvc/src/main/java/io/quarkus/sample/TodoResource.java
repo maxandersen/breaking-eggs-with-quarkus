@@ -39,7 +39,7 @@ public class TodoResource {
     @Transactional
     public Response create(@Valid Todo item) {
         item.persist();
-        return Response.status(Status.OK).entity(item).build();
+        return Response.status(Status.CREATED).entity(item).build();
     }
 
     @PATCH

@@ -14,11 +14,12 @@ public class Todo extends PanacheEntity {
     @Column(unique = true)
     public String title;
 
-    String comment;
-
     public boolean completed;
 
-    //public String comment;
+
+
+
+
 
     @Column(name = "ordering")
     public int order;
