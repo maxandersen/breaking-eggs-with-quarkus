@@ -147,7 +147,7 @@ Everything, except beans that...:
 [%step]
 image::images/brokenegg.png[]
 
-== Static initi at build time
+== Static init at build time
 
 * icon:heart[set=fas] Quarkus initializes all classes at build time = faster startup
 * You or some "bad" library might have static init
