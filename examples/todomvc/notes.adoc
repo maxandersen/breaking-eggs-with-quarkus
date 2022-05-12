@@ -1,0 +1,116 @@
+
+Demo #1:
+
+- goto https://code.quarkus.io
+- show around, talk about number of extensions available.
+- mention we support maven, gradle, quarkus cli etc.
+- if time show push to github
+
+Demo #2: create basic project with cli
+
+- have quarkus cli installed:
+ `jbang app install --fresh --force quarkus@quarkusio`
+- run: `quarkus create <audiencename>; cd <audiencename>`
+- open in ide: `code .`
+- start devmode: `quarkus dev` - idea is to not have to restart the project
+- open http://localhost:8080
+- change `GreetingResource.java` and demonstrate live reload
+- endable continous testing ...make it fail and fix it again
+
+Demo #3: that was the basics - now lets do fullstack
+
+- code `todo-demo-app`
+- `quarkus dev`
+- press `h` show you use 'w' to open web app and 'd' for dev mode
+- add `getTitle()` in Todo with upper case
+- show 'd' mode ...show hibernate 
+- `quarkus add ext openapi`
+
+add openapi
+
+native mode:
+
+open browser: 
+mkdir logs
+ for i in $(seq 9000 9100); do QUARKUS_HTTP_PORT=$i ./target/todo-backend-1.0.0-SNAPSHOT-runner > logs/todo-$i.log &; done
+for i in $(shuf -i 9000-9100 -n 10); do open http://localhost:$i &; done
+killall -9 runner
+
+
+
+
+old:
+
+demo 3: command mode
+show command mode
+
+    System.out.println("\n*** TODO CLI ***");
+    var query = args.length>0 ?
+                Todo.find("title like ?1", "%" + args[0] + "%").list() :
+                Todo.listAll(Sort.by("order"));
+ 
+    query.forEach(System.out::println);
+    
+    System.out.println("\n\n");
+
+
+show dev mode of command mode
+- mvn quarkus:dev  -Dquarkus.package.main-class=todo -Dquarkus.profile=cli -Dquarkus.args=
+
+
+demo 4: ngrok - external extension
+ngrok
+ <repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+
+<dependency>
+	    <groupId>com.github.quarkus-extension</groupId>
+	    <artifactId>quarkus-ngrok-extension</artifactId>
+	    <version>master-SNAPSHOT</version>
+	</dependency>
+
+
+demo 5: wireshark
+
+
+ideas/strategy:
+  make things fun
+  zero config/zero install
+    ngrok
+    kubernetes
+
+  
+
+
+
+
+
+* vscode
+
+cli:
+ package io.quarkus.sample;
+
+import io.quarkus.runtime.QuarkusApplication;
+import io.quarkus.runtime.annotations.QuarkusMain;
+
+@QuarkusMain    
+public class TodoCli implements QuarkusApplication {
+  @Override
+  public int run(String... args) throws Exception {   
+    System.out.println("Hello World");
+    return 10;
+ }
+}
+* Che
+
+https://che.openshift.io/dashboard/#/ide/manderse@redhat.com/wksp-h2nf?tab=READY_TO_GO
+
+
+./mvnw quarkus:generate-config
+
+ 

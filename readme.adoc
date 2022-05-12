@@ -1,0 +1,23 @@
+# To make a cake you have to break some eggs
+
+Presentation on Quarkus and how it makes Java competitive again by breaking/flipping some
+long held assumptions in the Java world. 
+
+The presentation is done using asciidoctor + reveal.js and the whole thing is wired up with a link:src/docs/adoc2reveal.java[JBang script] uses Github Actions to publish to
+
+The advantage is that you need zero installation and setup for this. No Java, Maven, Ruby, Gems etc. setup. All done and in isolated and in a reproducible manner.
+
+You can run `./render` and it will setup jbang and run the script or if you already have https://jbang.dev/download[jbang installed] you can do:
+
+[source,bash]
+----
+jbang adoc2reveal.java --watch
+----
+
+This will get you a `index.html` generated anytime a `.adoc` file changes. 
+
+You can open it directly from the filesystem, but works best when served from a server.
+
+You can run `jbang httpd@jbangdev` to serve the `index.html` file,
+or use something like vscode live reload plugin to open the index.html 
+and get live-reload when it re-renders.

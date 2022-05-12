@@ -1,0 +1,8 @@
+index.html
+*.html
+*.iml
+.idea
+.vscode
+.asciidoctor
+diag-*.png
+docs/breaking-eggs-with-quarkus.code-workspace

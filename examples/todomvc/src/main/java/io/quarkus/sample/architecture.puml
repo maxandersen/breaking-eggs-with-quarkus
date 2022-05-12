@@ -1,0 +1,11 @@
+@startuml
+
+interface vueui
+component todoapp 
+database database
+actor user
+
+user - vueui
+vueui - todoapp
+todoapp - database 
+@endum
