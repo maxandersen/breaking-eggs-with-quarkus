@@ -1,6 +1,7 @@
-# Getting Started with Java: The JBang Way
+# To make a cake you have to break some eggs
 
-A (work-in-progress) presentation made for https://docs.microsoft.com/en-us/events/learntv/jdconf-2022/[JDConf 2022].
+Presentation on Quarkus and how it makes Java competitive again by breaking/flipping some
+long held assumptions in the Java world. 
 
 The presentation is done using asciidoctor + reveal.js and the whole thing is wired up with a link:src/docs/adoc2reveal.java[JBang script] uses Github Actions to publish to
 
