@@ -1,0 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Kalam';
+
+section.blackback :is(h1,h2,div) {
+    /*background-color: black;*/
+    color: white;
+}
+  
+/* font example */
+section.title :is(h1,h2,div) {
+  font-family: 'Kalam';
+}

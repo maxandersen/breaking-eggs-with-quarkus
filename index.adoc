@@ -1,10 +1,11 @@
+[.blackback]
 = To make a cake you need to break some eggs
 :date: 2022-05-10
 :revealjs_theme: white
 :customcss: css/custom.css
 :favicon: ./images/favicon.ico
 // better 
-:title-slide-background-image: images/slide-white.png
+:title-slide-background-image: images/blackspace.png
 :slide-background-image: images/slide2-white.png
 :revealjs_fragmentInURL: true
 :revealjs_hash: true
@@ -22,7 +23,6 @@
 :highlightjs-theme: https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/solarized-dark.min.css
 :revealjs_preloadIframes: true
 :icons: font
-
 
 Max Rydahl Andersen +
 @maxandersen +

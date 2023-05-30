@@ -6,5 +6,5 @@ then
     curl -Ls https://sh.jbang.dev | bash -s - app setup
 fi
 
-jbang adoc2reveal.java --watch
+jbang httpd@jbangdev & jbang adoc2reveal.java --watch
 
